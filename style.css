@@ -75,6 +75,12 @@ header>.logo-container{
     background-color: var(--branco);
 }
 
+main{
+    width: 100%;
+    background-color: var(--verde-claro);
+    height: fit-content;
+}
+
 .hero{
     width: 100%;
     position: relative;
@@ -198,4 +204,8 @@ h1>span{
     justify-content: center;
     background-color: var(--verde-claro);
     cursor: pointer;
+}
+
+.about-class{
+    width: 75%;
 }
