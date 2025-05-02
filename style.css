@@ -253,3 +253,88 @@ main{
     color: white;
     box-shadow: 0 0 10px var(--verde);
 }
+
+.classes-videos{
+    width: 100%;
+    padding: 0 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    margin-bottom: 4rem;
+}
+
+.text-videos-classes{
+    width: 70%;
+    color: var(--branco);
+    align-self: flex-start;
+    font-weight: 600;
+}
+
+.text-videos-classes>h1{
+    color: var(--preto);
+    font-weight: 800;
+}
+
+.videos-cards{
+    display: flex;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.card-video{
+    width: 50%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.video-cont{
+    display: flex;
+}
+
+.card-video>.video-cont>h1{
+    position: absolute;
+    left: 18%;
+    color: white;
+    bottom: 50px;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.card-video>.video-cont>img{
+    width: 85%;
+}
+
+.btn-play-cont{
+    height: 100%;
+    width: 15%;
+    background-color: var(--preto);
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-play{
+    width: 60px;
+    position: absolute;
+    bottom: 50px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    border-radius: 100%;
+}
+
+.card-video>button{
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 12pt;
+    font-weight: 500;
+    background-color: var(--preto);
+    color: white;
+}
