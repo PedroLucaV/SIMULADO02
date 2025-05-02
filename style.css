@@ -79,6 +79,8 @@ main{
     width: 100%;
     background-color: var(--verde-claro);
     height: fit-content;
+    display: flex;
+    flex-direction: column;
 }
 
 .hero{
@@ -121,13 +123,13 @@ main{
     gap: 1rem;
 }
 
-h1{
+.text-content-hero>h1{
     color: white;
     display: flex;
     transform: rotateZ(90deg);
     font-size: 100pt;
 }
-h1>span{
+.text-content-hero>h1>span{
     display: block;
     color: var(--verde-claro);
     transform: rotateX(180deg);
@@ -207,5 +209,47 @@ h1>span{
 }
 
 .about-class{
-    width: 75%;
+    margin: 4rem 0;
+    width: 80%;
+    align-self: flex-end;
+    background-image: url('./anexos/about-bg.jpg');
+    height: fit-content;
+    background-size: cover;
+}
+
+.text-content-about{
+    padding: 3rem 0;
+    padding-left: 3rem;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    color: white;
+}
+
+.text-content-about>.text{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    text-align: justify;
+}
+
+.text-content-about>.line{
+    width: 2px;
+    height: 100px;
+    background-color: var(--branco);
+}
+
+.text-content-about>.btn-read{
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    font-size: 14pt;
+    font-weight: 500;
+    background-color: var(--preto);
+    color: white;
+    box-shadow: 0 0 10px var(--verde);
 }
