@@ -477,3 +477,102 @@ main{
     background-color: var(--preto);
     color: white;
 }
+
+.wtSaySt>.text-what-say{
+    width: 100%;
+    padding: 0 10rem;
+    color: var(--branco);
+    align-self: flex-start;
+    font-weight: 600;
+    text-align: center;
+}
+
+.wtSaySt>.text-what-say>h1{
+    color: var(--preto);
+    font-size: 24pt;
+    font-weight: 800;
+}
+
+.students-feedback-container{
+    margin-top: 4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.student-feedback{
+    display: flex;
+    gap: 2rem;
+}
+
+.student-feedback-card{
+    margin-top: 2rem;
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.student-feedback-card>img{
+    position: absolute;
+    width: 125px;
+    top: -62.5px;
+}
+
+.student-feedback-card>.text-content-feedback{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.student-feedback-card>.text-content-feedback>p{
+    text-align: left;
+    font-size: 14pt;
+}
+
+.buttons-slide-feedback{
+    display: flex;
+    width: 100px;
+    position: relative;
+}
+
+.buttons-slide-feedback>.btn{
+    border: none;
+    background-color: var(--branco);
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons-slide-feedback>.btn>img{
+    width: 15px;
+}
+
+.buttons-slide-feedback>.btn-prev{
+    background-color: var(--preto);
+    z-index: 0;
+    left: 0;
+}
+
+.buttons-slide-feedback>.btn-prev>img{
+    margin-right: 0.5rem;
+}
+
+.buttons-slide-feedback>.btn-next{
+    z-index: +1;
+    position: absolute;
+    right: 12px;
+}
