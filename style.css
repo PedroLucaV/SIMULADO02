@@ -394,12 +394,13 @@ main{
     width: 100%;
     position: relative;
     display: flex;
-    gap: 0.5rem;
+    gap: 1rem;
     height: 600px;
 }
 
 .blog-content{
     width: 50%;
+    position: relative;
     background-color: rgb(48, 40, 40);
     color: white;
 }
@@ -411,18 +412,35 @@ main{
 }
 
 .blog-content>.date{
-    width: 50px;
-    height: 50px;
+    width: 65px;
+    height: 65px;
     background-color: var(--verde-claro);
     border-radius: 100%;
+    top: calc(50% - 32.5px);
     position: absolute;
     display: flex;
-    top: 275px;
+}
+
+.blog-content>.date{
+    color: white;
+    font-weight: 700;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.blog-content:nth-child(1) > .date {
+    right: calc(2rem + 290px);
+}
+
+.blog-content:nth-child(2)>.date{
+    left: 2rem;
 }
 
 .text-content-blog{
     padding-top: 50px;
-    width: 80%;
+    width: 100%;
     height: 300px;
     display: flex;
     flex-direction: column;
@@ -432,11 +450,30 @@ main{
 .text-content-blog>h1{
     font-size: 28pt;
 }
+
 .text-content-blog-1{
-    padding-left: 25%;
+    position: absolute;
+    width: 50%;
+    text-align: justify;
+    right: 2rem;
+    
 }
 
 .text-content-blog-2{
-    padding-left: 1rem;
-    padding-right: 25%;
+    position: absolute;
+    width: 50%;
+    text-align: justify;
+    left: 2rem;
+    
+}
+
+.text-content-blog>button{
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 12pt;
+    font-weight: 500;
+    background-color: var(--preto);
+    color: white;
 }
